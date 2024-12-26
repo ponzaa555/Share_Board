@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import {ConvexClientProvider} from "@/provider/convex-client-provider";
+import { ConvexClientProvider } from "@/provider/convex-client-provider";
+import { Toaster } from "@/components/ui/sonner"
+import { ModalProvider } from "@/provider/modal-provider";
 
 
 
@@ -24,9 +26,11 @@ export default function RootLayout({
         className={`${inter.className} `}
       >
         <ConvexClientProvider>
+          <Toaster />
+          <ModalProvider /> 
           {children}
         </ConvexClientProvider>
-      </body> 
+      </body>
     </html>
   );
 }

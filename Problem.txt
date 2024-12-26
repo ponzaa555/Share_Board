@@ -1,0 +1,26 @@
+Rename Dialog
+    - หลังปิด Dialog แล้วหน้าจอค้างเกิน tag html ไม่รู้ทำไม 
+    - แต่ ใน board Rename ไม่เป็น
+    path: 
+        -store/use-rename-modal
+        -provider/modal-provider.tsx
+        - component/action.tsx
+    Slove:
+
+Query Favorite & Search
+    TODO
+    - ต้อง Query จาก Favorite ได้
+    - ต้อง Query จาก Search ได้ (Optional วิธีเดิมก็ได้แต่มีปัญหาการใช่ useSearchParams() ถ้าไม่มีมันเป็น  null
+                                ลองเปลี่ยนไปใช้ const searchParams = new URLSearchParams("key1=value1&key2=value2")
+                            )
+    Slove 
+        const {search  ,favorites } =  React.use(query); แต่ error type แทน
+
+Info.Skeleton 
+    - ถ้า จะexport client component function จะ error
+
+api/liveblock-auth
+    - ตอนนี้มัน return มาละขึ้น error ที่ฝั่งหน้าบ้าน
+Toolbar
+    - ตอนนี้ icon Toolbar ในหน้า boards มันเล็กเกิน
+    - loading ยังไม่ทำงาน partParticipant

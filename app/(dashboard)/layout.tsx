@@ -1,6 +1,7 @@
 import { Navbar } from "./_component/navbar";
 import { OrgSidBar } from "./_component/org-sidebar";
 import { Sidebar } from "./_component/sidebar";
+import { Toaster } from "@/components/ui/sonner"
 
 
 interface DashboardLayoutProps {
