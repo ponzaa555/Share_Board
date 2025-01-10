@@ -24,3 +24,6 @@ api/liveblock-auth
 Toolbar
     - ตอนนี้ icon Toolbar ในหน้า boards มันเล็กเกิน
     - loading ยังไม่ทำงาน partParticipant
+
+Cursors
+    - ไม่เห็น Cursor คนอื่นไม่รู้ทำไม

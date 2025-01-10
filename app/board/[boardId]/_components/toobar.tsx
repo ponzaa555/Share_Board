@@ -1,7 +1,7 @@
 
 import { Circle, MousePointer2, Pencil, Redo2, Square, StickyNote, Type, Undo2 } from "lucide-react"
 import { ToolButton } from "./tool-button"
-import { CanvasState , CanvasMode, LayorType} from "@/types/canvas";
+import { CanvasState , CanvasMode, LayerType} from "@/types/canvas";
 
 
 
@@ -35,12 +35,12 @@ export const Toolbar = ( {canvasState,setCanvasState,undo,redo,canRedo,canUndo}:
                     onClick={() => setCanvasState(
                         {
                             mode:CanvasMode.Inserting,
-                            layerType:LayorType.Text,
+                            layerType:LayerType.Text,
 
                         })}
                     isActive={
                         canvasState.mode === CanvasMode.Inserting &&
-                        canvasState.layerType === LayorType.Text
+                        canvasState.layerType === LayerType.Text
                     } />
                 <ToolButton
                     label="Note"
@@ -48,12 +48,12 @@ export const Toolbar = ( {canvasState,setCanvasState,undo,redo,canRedo,canUndo}:
                     onClick={() => setCanvasState(
                         {
                             mode:CanvasMode.Inserting,
-                            layerType:LayorType.Note
+                            layerType:LayerType.Note
                         }
                     )}
                     isActive={
                         canvasState.mode === CanvasMode.Inserting &&
-                        canvasState.layerType === LayorType.Note
+                        canvasState.layerType === LayerType.Note
                     } />
                 <ToolButton
                     label="Rectangle"
@@ -61,12 +61,12 @@ export const Toolbar = ( {canvasState,setCanvasState,undo,redo,canRedo,canUndo}:
                     onClick={() => setCanvasState(
                         {
                             mode: CanvasMode.Inserting,
-                            layerType:LayorType.Rectangle
+                            layerType:LayerType.Rectangle
                         }
                     )}
                     isActive={
                         canvasState.mode === CanvasMode.Inserting &&
-                        canvasState.layerType === LayorType.Rectangle
+                        canvasState.layerType === LayerType.Rectangle
                     } />
                 <ToolButton
                     label="Ellipse"
@@ -74,12 +74,12 @@ export const Toolbar = ( {canvasState,setCanvasState,undo,redo,canRedo,canUndo}:
                     onClick={() =>setCanvasState(
                         {
                             mode: CanvasMode.Inserting,
-                            layerType:LayorType.Ellipse
+                            layerType:LayerType.Ellipse
                         })
                     }
                     isActive={
                         canvasState.mode === CanvasMode.Inserting &&
-                        canvasState.layerType === LayorType.Ellipse
+                        canvasState.layerType === LayerType.Ellipse
                     } />
                 <ToolButton
                     label="Pencil"
